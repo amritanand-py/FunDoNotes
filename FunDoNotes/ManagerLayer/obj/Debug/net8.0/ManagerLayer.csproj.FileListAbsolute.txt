@@ -1,0 +1,12 @@
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\bin\Debug\net8.0\ManagerLayer.deps.json
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\bin\Debug\net8.0\ManagerLayer.dll
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\bin\Debug\net8.0\ManagerLayer.pdb
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ManagerLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ManagerLayer.AssemblyInfoInputs.cache
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ManagerLayer.AssemblyInfo.cs
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ManagerLayer.csproj.CoreCompileInputs.cache
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ManagerLayer.sourcelink.json
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ManagerLayer.dll
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\refint\ManagerLayer.dll
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ManagerLayer.pdb
+D:\Github\FunDoNotes\FunDoNotes\ManagerLayer\obj\Debug\net8.0\ref\ManagerLayer.dll
