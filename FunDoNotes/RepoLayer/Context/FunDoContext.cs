@@ -12,7 +12,7 @@ namespace RepoLayer.Context
     {
         public FunDoContext(DbContextOptions options) : base(options) { }
 
-        DbSet<UserEntity> UserTable { get; set; }
+        public DbSet<UserEntity> UserTable { get; set; }
 
     }
 }

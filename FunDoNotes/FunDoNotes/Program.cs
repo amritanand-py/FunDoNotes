@@ -1,5 +1,10 @@
+using ManagerLayer.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RepoLayer.Context;
+using RepoLayer.Interfaces;
+using RepoLayer.Services;
+using ManagerLayer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +16,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<FunDoContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
-
+builder.Services.AddTransient<IUserRepo, UserServices>();
+builder.Services.AddTransient<IuserManager, UserManager>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

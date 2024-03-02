@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "FunDoNotes.Controllers.UserController",
+    "Method": "UserRegistration",
+    "RelativePath": "api/User/Registration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CommonLayer.RequestModel.RegisterReqModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

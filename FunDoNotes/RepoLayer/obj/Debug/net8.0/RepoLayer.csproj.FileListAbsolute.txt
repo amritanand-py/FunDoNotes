@@ -13,3 +13,6 @@ D:\Github\FunDoNotes\FunDoNotes\RepoLayer\obj\Debug\net8.0\refint\RepoLayer.dll
 D:\Github\FunDoNotes\FunDoNotes\RepoLayer\obj\Debug\net8.0\RepoLayer.pdb
 D:\Github\FunDoNotes\FunDoNotes\RepoLayer\obj\Debug\net8.0\RepoLayer.genruntimeconfig.cache
 D:\Github\FunDoNotes\FunDoNotes\RepoLayer\obj\Debug\net8.0\ref\RepoLayer.dll
+D:\Github\FunDoNotes\FunDoNotes\RepoLayer\bin\Debug\net8.0\CommonLayer.dll
+D:\Github\FunDoNotes\FunDoNotes\RepoLayer\bin\Debug\net8.0\CommonLayer.pdb
+D:\Github\FunDoNotes\FunDoNotes\RepoLayer\obj\Debug\net8.0\RepoLayer.csproj.Up2Date

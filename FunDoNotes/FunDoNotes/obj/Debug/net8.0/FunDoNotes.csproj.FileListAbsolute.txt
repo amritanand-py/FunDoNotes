@@ -137,3 +137,7 @@ D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\obj\Debug\net8.0\refint\FunDoNotes.dl
 D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\obj\Debug\net8.0\FunDoNotes.pdb
 D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\obj\Debug\net8.0\FunDoNotes.genruntimeconfig.cache
 D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\obj\Debug\net8.0\ref\FunDoNotes.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\CommonLayer.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\ManagerLayer.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\ManagerLayer.pdb
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\CommonLayer.pdb
