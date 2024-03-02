@@ -32,5 +32,23 @@ namespace RepoLayer.Services
 
             return userobj;
         }
+
+        public bool UserLogin(LoginReqModel model)
+        {
+            var tempvar = FunDoContext.UserTable.Where(x=>x.Email == model.Email).ToList();
+            if (tempvar.Count == 0) {
+                return false;
+            }
+            else
+            {
+                if (tempvar[0].Password == model.Password)
+                {
+                    return true;
+                }
+                return false;
+            }
+
+
+        }
     }
 }

@@ -24,10 +24,10 @@ namespace ManagerLayer.Services
             return UserManagerObj.registration(model);
         }
 
-        /*public UserEntity GetUserEntity(RegisterReqModel model)
+        public bool UserLogin(LoginReqModel model)
         {
-            UserManagerObj.registration(model);
-        }*/
+            return UserManagerObj.UserLogin(model);
+        }
 
 
     }

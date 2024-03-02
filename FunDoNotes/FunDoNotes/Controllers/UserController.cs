@@ -34,5 +34,22 @@ namespace FunDoNotes.Controllers
             }
 
         }
+
+        [HttpPost]
+        [Route("Login")]
+        public ActionResult UserLogin(LoginReqModel model) 
+        {
+            var tempvar = usermanager.UserLogin(model);
+            if (tempvar == true)
+            {
+                return Ok(new FunDoResponse<bool> { Success = true, Message = "login Successful", Data = tempvar });
+            }
+            else
+            {
+                return BadRequest(new FunDoResponse<bool> { Success = true, Message = "Login Unsuccessful", Data = false });
+            }
+        }
+
+        }
     }
-}
+
