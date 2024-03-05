@@ -12,6 +12,6 @@ namespace RepoLayer.Interfaces
     public interface IUserRepo
     {
         public UserEntity registration(RegisterReqModel model );
-        public bool UserLogin(LoginReqModel model);
+        public string UserLogin(LoginReqModel model);
     }
 }

@@ -28,11 +28,7 @@ namespace FunDoNotes.Controllers
             {
                 return Ok(new FunDoResponse<UserEntity> { Success = true, Message = "Regestration Successful", Data = tempVar });
             }
-            else
-            {
-                return BadRequest(new FunDoResponse<UserEntity> { Success = true, Message = "Regestration Unsuccessful", Data = null });
-            }
-
+            return BadRequest(new FunDoResponse<UserEntity> { Success = true, Message = "Regestration Unsuccessful", Data = null });
         }
 
         [HttpPost]
@@ -40,14 +36,11 @@ namespace FunDoNotes.Controllers
         public ActionResult UserLogin(LoginReqModel model) 
         {
             var tempvar = usermanager.UserLogin(model);
-            if (tempvar == true)
+            if (tempvar != null)
             {
-                return Ok(new FunDoResponse<bool> { Success = true, Message = "login Successful", Data = tempvar });
+                return Ok(new FunDoResponse<string> { Success = true, Message = "login Successful", Data = tempvar });
             }
-            else
-            {
                 return BadRequest(new FunDoResponse<bool> { Success = true, Message = "Login Unsuccessful", Data = false });
-            }
         }
 
         }

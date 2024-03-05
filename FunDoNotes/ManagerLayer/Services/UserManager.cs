@@ -24,7 +24,7 @@ namespace ManagerLayer.Services
             return UserManagerObj.registration(model);
         }
 
-        public bool UserLogin(LoginReqModel model)
+        public string UserLogin(LoginReqModel model)
         {
             return UserManagerObj.UserLogin(model);
         }
