@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20240305114756_NotesMigration.cs" />
+    <Compile Remove="Migrations\20240305114756_NotesMigration.Designer.cs" />
+    <Compile Remove="Migrations\20240305161900_Migration1.cs" />
+    <Compile Remove="Migrations\20240305161900_Migration1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">

@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "FunDoNotes.Controllers.NoteController",
+    "Method": "AddNotes",
+    "RelativePath": "api/Note/AddNotes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CommonLayer.RequestModel.NotesReqModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FunDoNotes.Controllers.UserController",
     "Method": "ForgetPasswordAPI",
     "RelativePath": "api/User/ForgetPassword",

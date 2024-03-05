@@ -86,7 +86,7 @@ namespace RepoLayer.Services
 
         public ForgetPassModel ForgetPassword(string Email)
         {
-            UserEntity? User = FunDoContext.UserTable.FirstOrDefault(x => x.Email == Email);
+            UserEntity User = FunDoContext.UserTable.FirstOrDefault(x => x.Email == Email);
             ForgetPassModel forgetPassword = new ForgetPassModel();
             forgetPassword.Email = User.Email;
             forgetPassword.userID = User.UserId;
@@ -106,7 +106,7 @@ namespace RepoLayer.Services
 
         public bool ResetPassword(string Email, ResetPasswordModel reset)
         {
-            UserEntity? User = FunDoContext.UserTable.FirstOrDefault(x => x.Email == Email);
+            UserEntity User = FunDoContext.UserTable.FirstOrDefault(x => x.Email == Email);
 
             if (User != null)
             {

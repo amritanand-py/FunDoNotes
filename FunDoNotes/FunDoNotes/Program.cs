@@ -38,6 +38,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddDbContext<FunDoContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
 builder.Services.AddTransient<IUserRepo, UserServices>();
 builder.Services.AddTransient<IuserManager, UserManager>();
+builder.Services.AddTransient<INotesRepo, NoteServices>();
+builder.Services.AddTransient<INotesManager, NotesManager>();
 
 
 builder.Services.AddMassTransit(x =>
