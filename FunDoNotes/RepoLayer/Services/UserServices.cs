@@ -83,5 +83,27 @@ namespace RepoLayer.Services
             return tokenString;
 
         }
+
+        public ForgetPassModel ForgetPassword(string Email)
+        {
+            UserEntity? User = FunDoContext.UserTable.FirstOrDefault(x => x.Email == Email);
+            ForgetPassModel forgetPassword = new ForgetPassModel();
+            forgetPassword.Email = User.Email;
+            forgetPassword.userID = User.UserId;
+            forgetPassword.Token = genrateToken(User.Email, User.UserId);
+            return forgetPassword;
+        }
+
+        public bool checker(string Email)
+        {
+            if (FunDoContext.UserTable.ToList().Find(x => x.Email == Email) != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+
+
     }
 }

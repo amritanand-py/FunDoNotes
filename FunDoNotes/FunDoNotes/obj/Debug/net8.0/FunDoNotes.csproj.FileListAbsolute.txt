@@ -143,3 +143,14 @@ D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\ManagerLayer.pdb
 D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\CommonLayer.pdb
 D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\MassTransit.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\MassTransit.AspNetCoreIntegration.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\RabbitMQ.Client.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\Automatonymous.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\GreenPipes.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\NewId.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Github\FunDoNotes\FunDoNotes\FunDoNotes\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

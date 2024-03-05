@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "FunDoNotes.Controllers.UserController",
+    "Method": "ForgetPasswordAPI",
+    "RelativePath": "api/User/ForgetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDoNotes.Controllers.UserController",
     "Method": "UserLogin",
     "RelativePath": "api/User/Login",
     "HttpMethod": "POST",

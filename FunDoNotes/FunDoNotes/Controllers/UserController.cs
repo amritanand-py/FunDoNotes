@@ -1,5 +1,8 @@
 ﻿using CommonLayer.RequestModel;
 using CommonLayer.ResponseModel;
+using CommonLayer.Utility;
+using ManagerLayer.Services;
+using MassTransit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +16,13 @@ namespace FunDoNotes.Controllers
     public class UserController : ControllerBase
     {
         public readonly IUserRepo usermanager;
+        public readonly IBus bus;
 
-        public UserController(IUserRepo usermanager)
+
+        public UserController(IUserRepo usermanager, IBus bus)
         {
             this.usermanager = usermanager;
+            this.bus = bus; 
         }
 
         [HttpPost]
@@ -33,16 +39,47 @@ namespace FunDoNotes.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public ActionResult UserLogin(LoginReqModel model) 
+        public ActionResult UserLogin(LoginReqModel model)
         {
-            var tempvar = usermanager.UserLogin(model);
-            if (tempvar != null)
+            var Response = usermanager.UserLogin(model);
+            if (Response != null)
             {
-                return Ok(new FunDoResponse<string> { Success = true, Message = "login Successful", Data = tempvar });
+                return Ok(new FunDoResponse<string> { Success = true, Message = "login Successful", Data = Response });
             }
-                return BadRequest(new FunDoResponse<bool> { Success = true, Message = "Login Unsuccessful", Data = false });
+            return BadRequest(new FunDoResponse<bool> { Success = true, Message = "Login Unsuccessful", Data = false });
         }
 
+        [HttpPost]
+        [Route("ForgetPassword")]
+        
+         public async Task<ActionResult> ForgetPasswordAPI(string email)
+        {
+            try
+            {
+                if (usermanager.checker(email))
+                {
+                    send send = new send();
+                    ForgetPassModel model = usermanager.ForgetPassword(email);
+                    string str = send.SendMail(model.Email, model.Token);
+                    Uri uri = new Uri("rabbitmq://localhost/FundooNotesEmailQueue");
+                    var endpoint = await bus.GetSendEndpoint(uri);
+                    return Ok(new FunDoResponse<string> { Success = true, Message = "Forget password successful", Data = model.Token });
+                }
+                else
+                {
+                    throw new Exception("Failed to send email");
+                }
+            }
+            catch (Exception er)
+            {
+                return BadRequest(new FunDoResponse<string> { Success = true, Message = er.Message, Data = null });
+            }
+
         }
+
+
+
     }
+}
+
 

@@ -29,6 +29,10 @@ namespace ManagerLayer.Services
             return UserManagerObj.UserLogin(model);
         }
 
+        public ForgetPassModel ForgetPassword(ForgetPassModel model)
+        {
+            return UserManagerObj.ForgetPassword(model.Email);
+        }
 
     }
 }
