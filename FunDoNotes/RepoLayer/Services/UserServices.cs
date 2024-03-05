@@ -104,6 +104,22 @@ namespace RepoLayer.Services
         }
 
 
+        public bool ResetPassword(string Email, ResetPasswordModel reset)
+        {
+            UserEntity? User = FunDoContext.UserTable.FirstOrDefault(x => x.Email == Email);
+
+            if (User != null)
+            {
+                User.Password = EncryptDecryptClass.EncryptionPass(reset.Password);
+                FunDoContext.SaveChanges();
+                return true;
+            }
+            return false;
+        }
+
+
+
+
 
     }
 }

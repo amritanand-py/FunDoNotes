@@ -3,6 +3,7 @@ using CommonLayer.ResponseModel;
 using CommonLayer.Utility;
 using ManagerLayer.Services;
 using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -73,6 +74,31 @@ namespace FunDoNotes.Controllers
             catch (Exception er)
             {
                 return BadRequest(new FunDoResponse<string> { Success = true, Message = er.Message, Data = null });
+            }
+
+         }
+
+        [HttpPost]
+        [Authorize]
+        [Route("ResetPassword")]
+
+        public ActionResult ResetPassword(ResetPasswordModel model)
+        {
+            try
+            {
+                string email = User.FindFirst("Email").Value;
+                if (usermanager.ResetPassword(email, model))
+                {
+                    return Ok(new FunDoResponse<bool> { Success = true, Message = "Password Reset successful", Data = true });
+
+                }
+                return BadRequest(new FunDoResponse<bool> { Success = false, Message = "Failed to reset", Data = false }); ;
+
+            }
+
+            catch (Exception er)
+            {
+                return BadRequest(new FunDoResponse<bool> { Success = false, Message = er.Message, Data = false });
             }
 
         }

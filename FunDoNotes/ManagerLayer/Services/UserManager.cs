@@ -34,5 +34,10 @@ namespace ManagerLayer.Services
             return UserManagerObj.ForgetPassword(model.Email);
         }
 
+        public bool ResetPassword(string Email, ResetPasswordModel reset)
+        {
+            return UserManagerObj.ResetPassword(Email, reset);
+        }
+
     }
 }
