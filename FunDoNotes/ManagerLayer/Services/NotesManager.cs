@@ -24,6 +24,11 @@ namespace ManagerLayer.Services
             return NotesManagerobj.AddNotes(model,UserID);
         }
 
+        public bool UpdatePin(int Noteid, int UserID)
+        {
+            return NotesManagerobj.UpdatePin(Noteid,UserID);
+        }
+
 
     }
 }

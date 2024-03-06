@@ -28,7 +28,7 @@ namespace FunDoNotes.Controllers
         {
             try
             {
-                var user = Convert.ToInt32(User.FindFirst("UserId").Value);
+                var user = Convert.ToInt32(User.FindFirst("UserId").Value);  /// user verification
                 var response = notesManager.AddNotes(model, user);
                 if (response != null)
                 {
@@ -42,5 +42,21 @@ namespace FunDoNotes.Controllers
                 return BadRequest(new FunDoResponse<NoteEntity> { Success = false, Message = ex.Message, Data = null });
             }
         }
+
+        [HttpPut]
+        [Authorize]
+        [Route("Pin")]
+        public ActionResult editpin(int noteid)
+        {
+            var user = Convert.ToInt32(User.FindFirst("UserId").Value);
+            var response = notesManager.UpdatePin(user, noteid);
+            if (response != null)
+            {
+                return Ok(new FunDoResponse<bool> { Success = true, Message = "Note pin Successful", Data = response });
+
+            }
+            return BadRequest(new FunDoResponse<bool> { Success = false, Message = "Note pin Unsuccessful", Data = false });
+        }
     }
 }
+

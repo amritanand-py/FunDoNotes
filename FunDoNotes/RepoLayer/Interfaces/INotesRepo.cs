@@ -11,5 +11,6 @@ namespace RepoLayer.Interfaces
     public interface INotesRepo
     {
         public NoteEntity AddNotes(NotesReqModel model, int UserID);
+        public bool UpdatePin(int Noteid, int UserID);
     }
 }

@@ -55,6 +55,28 @@ namespace RepoLayer.Services
             }
         }
 
+        public bool UpdatePin(int Noteid,int UserID) 
+        { 
+            var note = FunDoContext.NotesTable.FirstOrDefault(x => x.NoteId == Noteid);
+            if (note == null)
+            {
+                throw new Exception("note not avail");
+
+            }
+            if(note.UserId == UserID)
+            {
+                note.IsPin = true;
+                
+            }
+            else
+            {
+                note.IsPin = false;
+            }
+            note.UpdatedAt = DateTime.Now;
+            FunDoContext.SaveChanges();
+            return true;
+        }
+
 
 
 

@@ -11,5 +11,6 @@ namespace ManagerLayer.Interfaces
     public interface INotesManager
     {
         public NoteEntity AddNotes(NotesReqModel model, int UserID);
+        public bool UpdatePin(int Noteid, int UserID);
     }
 }
