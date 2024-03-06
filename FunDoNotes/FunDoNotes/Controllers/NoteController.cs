@@ -57,6 +57,39 @@ namespace FunDoNotes.Controllers
             }
             return BadRequest(new FunDoResponse<bool> { Success = false, Message = "Note pin Unsuccessful", Data = false });
         }
+
+
+
+        [HttpPost]
+        [Authorize]
+        [Route("ReviewSearchBytitle")]
+        public ActionResult SearchBytitleandDesc(NotesReqModel model)
+        {
+            var user = Convert.ToInt32(User.FindFirst("UserId").Value);
+            var response = notesManager.SearchByTitle(model.NoteTitle,model.NoteDescription);
+            if (response != null)
+            {
+                return Ok(new FunDoResponse<NoteEntity> { Success = true, Message = "NOte Found", Data = response });
+
+            }
+            return BadRequest(new FunDoResponse<NoteEntity> { Success = false, Message = "Unable to find", Data = null });
+        }
+
+        [HttpPut]
+        [Authorize]
+        [Route("ReviewCountNotes")]
+        public ActionResult TotalnoOFNOtes(int userid)
+
+        {
+            var response = notesManager.CountUserNotes(userid);
+            if (response != null)
+            {
+                return Ok(new FunDoResponse<int> { Success = true, Message = "success", Data = response });
+
+            }
+            return BadRequest(new FunDoResponse<int> { Success = false, Message = "unsucess", Data = 0 });
+        }
     }
 }
+
 

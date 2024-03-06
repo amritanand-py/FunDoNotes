@@ -103,6 +103,19 @@ namespace FunDoNotes.Controllers
 
         }
 
+        [HttpPost]
+        [Route("ReviewReg")]
+        public ActionResult ReviewReg(RegisterReqModel model)
+        {
+            var response = usermanager.ReviewRegistration(model);
+            if (response != null)
+            {
+                return Ok(new FunDoResponse<UserEntity> { Success = true, Message = "Update Successful", Data = response });
+            }
+            return BadRequest(new FunDoResponse<UserEntity> { Success = false, Message = "Update Unsuccessful", Data = null });
+
+        }
+
 
 
     }

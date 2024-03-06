@@ -32,6 +32,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FunDoNotes.Controllers.NoteController",
+    "Method": "TotalnoOFNOtes",
+    "RelativePath": "api/Note/ReviewCountNotes",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDoNotes.Controllers.NoteController",
+    "Method": "SearchBytitleandDesc",
+    "RelativePath": "api/Note/ReviewSearchBytitle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CommonLayer.RequestModel.NotesReqModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FunDoNotes.Controllers.UserController",
     "Method": "ForgetPasswordAPI",
     "RelativePath": "api/User/ForgetPassword",
@@ -90,6 +122,22 @@
       {
         "Name": "model",
         "Type": "CommonLayer.RequestModel.ResetPasswordModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDoNotes.Controllers.UserController",
+    "Method": "ReviewReg",
+    "RelativePath": "api/User/ReviewReg",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CommonLayer.RequestModel.RegisterReqModel",
         "IsRequired": true
       }
     ],

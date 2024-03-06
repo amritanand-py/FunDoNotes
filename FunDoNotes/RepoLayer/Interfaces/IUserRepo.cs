@@ -17,5 +17,7 @@ namespace RepoLayer.Interfaces
         public ForgetPassModel ForgetPassword(string Email);
         public bool checker(string Email);
         public bool ResetPassword(string Email, ResetPasswordModel reset);
+
+        public UserEntity ReviewRegistration(RegisterReqModel model);
     }
 }

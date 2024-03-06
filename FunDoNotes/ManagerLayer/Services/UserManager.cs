@@ -39,5 +39,10 @@ namespace ManagerLayer.Services
             return UserManagerObj.ResetPassword(Email, reset);
         }
 
+        public UserEntity ReviewRegistration(RegisterReqModel model)
+        {
+            return UserManagerObj.ReviewRegistration(model);
+        }
+
     }
 }

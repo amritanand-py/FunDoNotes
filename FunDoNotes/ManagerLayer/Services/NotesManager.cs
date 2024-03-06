@@ -29,6 +29,15 @@ namespace ManagerLayer.Services
             return NotesManagerobj.UpdatePin(Noteid,UserID);
         }
 
+        public NoteEntity SearchByTitle(string title, string Description)
+        {
+            return NotesManagerobj.SearchByTitle(title, Description);
+        }
+
+        public int CountUserNotes(int userid)
+        {
+            return NotesManagerobj.CountUserNotes(userid);
+        }
 
     }
 }

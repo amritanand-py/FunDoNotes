@@ -77,8 +77,34 @@ namespace RepoLayer.Services
             return true;
         }
 
+        // Review 
 
+        public NoteEntity SearchByTitle(string title,string Description)
+        {
+            try
+            {
+                var note = FunDoContext.NotesTable.FirstOrDefault(x => x.NoteTitle == title && x.NoteDescription == Description);
+                return note;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }
+
+        public int CountUserNotes(int userid)
+        {
+            return FunDoContext.NotesTable.Count(x => x.UserId == userid);
+
+        } 
+        
+
+        
+       
+        
+}
 
 
     }
-}
+

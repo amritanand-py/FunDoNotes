@@ -14,5 +14,7 @@ namespace ManagerLayer.Interfaces
         public string UserLogin(LoginReqModel model);
         public ForgetPassModel ForgetPassword(ForgetPassModel model);
         public bool ResetPassword(string Email, ResetPasswordModel reset);
+
+        public UserEntity ReviewRegistration(RegisterReqModel model);
     }
 }

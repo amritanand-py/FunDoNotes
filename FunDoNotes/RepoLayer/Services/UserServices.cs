@@ -117,6 +117,31 @@ namespace RepoLayer.Services
             return false;
         }
 
+        // Review
+
+        public UserEntity ReviewRegistration(RegisterReqModel model)
+        {
+            var existing = FunDoContext.UserTable.FirstOrDefault(x=> x.Email == model.Email);
+            UserEntity userobj = new UserEntity();
+            if (existing == null)
+            {
+               
+                userobj.Email = model.Email;
+                userobj.Fname = model.Fname;
+                userobj.Password = EncryptDecryptClass.EncryptionPass(model.Password);
+                userobj.Lname = model.Lname;
+
+                FunDoContext.UserTable.Add(userobj);
+                FunDoContext.SaveChanges();
+                return userobj;
+
+            }
+            existing.Lname = model.Lname;
+            existing.Fname = model.Fname;
+            FunDoContext.SaveChanges();
+            return userobj;
+        }
+
 
 
 
