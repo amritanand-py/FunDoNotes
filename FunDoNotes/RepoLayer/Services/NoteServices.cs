@@ -76,6 +76,59 @@ namespace RepoLayer.Services
             FunDoContext.SaveChanges();
             return true;
         }
+        public bool Updatetrash(int Noteid, int UserID)
+        {
+            var note = FunDoContext.NotesTable.FirstOrDefault(x => x.NoteId == Noteid);
+            if (note == null)
+            {
+                throw new Exception("note not avail");
+
+            }
+            if (note.UserId == UserID)
+            {
+                note.IsTrash = true;
+
+            }
+            else
+            {
+                note.IsTrash = false;
+            }
+            note.UpdatedAt = DateTime.Now;
+            FunDoContext.SaveChanges();
+            return true;
+        }
+
+
+
+        public string addColor (int Noteid,string colour)
+        {
+            var findingNote = FunDoContext.NotesTable.FirstOrDefault(x => x.NoteId == Noteid);
+            if (findingNote == null)
+            {
+                throw new Exception("note not avail");
+
+            }
+            findingNote.colour = colour;
+            FunDoContext.SaveChanges();
+            return findingNote.colour;
+
+        }
+
+        public bool deleteNote(int Noteid)
+        {
+            var findingNote = FunDoContext.NotesTable.FirstOrDefault(x => x.NoteId == Noteid);
+            if (findingNote == null)
+            {
+                throw new Exception("note not avail");
+
+            }
+            FunDoContext.NotesTable.Remove(findingNote);
+            FunDoContext.SaveChanges() ;
+            return true;
+        }
+
+
+
 
         // Review 
 

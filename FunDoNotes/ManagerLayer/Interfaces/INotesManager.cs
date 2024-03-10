@@ -12,7 +12,10 @@ namespace ManagerLayer.Interfaces
     {
         public NoteEntity AddNotes(NotesReqModel model, int UserID);
         public bool UpdatePin(int Noteid, int UserID);
+        public bool Updatetrash(int Noteid, int UserID);
         public NoteEntity SearchByTitle(string title, string Description);
         public int CountUserNotes(int userid);
+        public string addColor(int Noteid, string colour);
+        public bool deleteNote(int Noteid);
     }
 }

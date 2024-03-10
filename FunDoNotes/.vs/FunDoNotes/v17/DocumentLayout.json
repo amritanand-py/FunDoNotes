@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "D:\\Github\\FunDoNotes\\FunDoNotes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|d:\\github\\fundonotes\\fundonotes\\repolayer\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|solutionrelative:repolayer\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|d:\\github\\fundonotes\\fundonotes\\managerlayer\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|solutionrelative:managerlayer\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{934421B4-92E2-49C7-9ABE-ED9E87EDAD34}|FunDoNotes\\FunDoNotes.csproj|d:\\github\\fundonotes\\fundonotes\\fundonotes\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{934421B4-92E2-49C7-9ABE-ED9E87EDAD34}|FunDoNotes\\FunDoNotes.csproj|solutionrelative:fundonotes\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|d:\\github\\fundonotes\\fundonotes\\managerlayer\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|solutionrelative:managerlayer\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|d:\\github\\fundonotes\\fundonotes\\repolayer\\services\\noteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|solutionrelative:repolayer\\services\\noteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|d:\\github\\fundonotes\\fundonotes\\managerlayer\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|solutionrelative:managerlayer\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|d:\\github\\fundonotes\\fundonotes\\repolayer\\interfaces\\inotesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|solutionrelative:repolayer\\interfaces\\inotesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|d:\\github\\fundonotes\\fundonotes\\managerlayer\\interfaces\\inotesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|solutionrelative:managerlayer\\interfaces\\inotesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|d:\\github\\fundonotes\\fundonotes\\managerlayer\\services\\notesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|solutionrelative:managerlayer\\services\\notesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934421B4-92E2-49C7-9ABE-ED9E87EDAD34}|FunDoNotes\\FunDoNotes.csproj|d:\\github\\fundonotes\\fundonotes\\fundonotes\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934421B4-92E2-49C7-9ABE-ED9E87EDAD34}|FunDoNotes\\FunDoNotes.csproj|solutionrelative:fundonotes\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|d:\\github\\fundonotes\\fundonotes\\repolayer\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|solutionrelative:repolayer\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|d:\\github\\fundonotes\\fundonotes\\managerlayer\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85778D53-D830-47C1-A25D-4B994EFE948E}|ManagerLayer\\ManagerLayer.csproj|solutionrelative:managerlayer\\interfaces\\iusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5AEA6123-41D7-4143-86A3-EEE23C257ADE}|RepoLayer\\RepoLayer.csproj|d:\\github\\fundonotes\\fundonotes\\repolayer\\interfaces\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +50,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NoteController.cs",
+              "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\FunDoNotes\\Controllers\\NoteController.cs",
+              "RelativeDocumentMoniker": "FunDoNotes\\Controllers\\NoteController.cs",
+              "ToolTip": "D:\\Github\\FunDoNotes\\FunDoNotes\\FunDoNotes\\Controllers\\NoteController.cs",
+              "RelativeToolTip": "FunDoNotes\\Controllers\\NoteController.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAcwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T17:28:53.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotesManager.cs",
+              "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\ManagerLayer\\Services\\NotesManager.cs",
+              "RelativeDocumentMoniker": "ManagerLayer\\Services\\NotesManager.cs",
+              "ToolTip": "D:\\Github\\FunDoNotes\\FunDoNotes\\ManagerLayer\\Services\\NotesManager.cs",
+              "RelativeToolTip": "ManagerLayer\\Services\\NotesManager.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAkwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T17:27:55.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "INotesManager.cs",
+              "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\ManagerLayer\\Interfaces\\INotesManager.cs",
+              "RelativeDocumentMoniker": "ManagerLayer\\Interfaces\\INotesManager.cs",
+              "ToolTip": "D:\\Github\\FunDoNotes\\FunDoNotes\\ManagerLayer\\Interfaces\\INotesManager.cs",
+              "RelativeToolTip": "ManagerLayer\\Interfaces\\INotesManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T17:27:46.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "INotesRepo.cs",
+              "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\RepoLayer\\Interfaces\\INotesRepo.cs",
+              "RelativeDocumentMoniker": "RepoLayer\\Interfaces\\INotesRepo.cs",
+              "ToolTip": "D:\\Github\\FunDoNotes\\FunDoNotes\\RepoLayer\\Interfaces\\INotesRepo.cs",
+              "RelativeToolTip": "RepoLayer\\Interfaces\\INotesRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T17:27:35.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NoteServices.cs",
+              "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\RepoLayer\\Services\\NoteServices.cs",
+              "RelativeDocumentMoniker": "RepoLayer\\Services\\NoteServices.cs",
+              "ToolTip": "D:\\Github\\FunDoNotes\\FunDoNotes\\RepoLayer\\Services\\NoteServices.cs",
+              "RelativeToolTip": "RepoLayer\\Services\\NoteServices.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAvwD4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T17:22:33.996Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -47,20 +132,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UserManager.cs",
               "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\ManagerLayer\\Services\\UserManager.cs",
               "RelativeDocumentMoniker": "ManagerLayer\\Services\\UserManager.cs",
               "ToolTip": "D:\\Github\\FunDoNotes\\FunDoNotes\\ManagerLayer\\Services\\UserManager.cs",
               "RelativeToolTip": "ManagerLayer\\Services\\UserManager.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAA3wCsAAAA8AAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwC4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T05:37:35.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "IuserManager.cs",
               "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\ManagerLayer\\Interfaces\\IuserManager.cs",
               "RelativeDocumentMoniker": "ManagerLayer\\Interfaces\\IuserManager.cs",
@@ -68,12 +153,11 @@
               "RelativeToolTip": "ManagerLayer\\Interfaces\\IuserManager.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwBEAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T05:37:28.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T05:37:28.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "IUserRepo.cs",
               "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\RepoLayer\\Interfaces\\IUserRepo.cs",
               "RelativeDocumentMoniker": "RepoLayer\\Interfaces\\IUserRepo.cs",
@@ -81,18 +165,17 @@
               "RelativeToolTip": "RepoLayer\\Interfaces\\IUserRepo.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAxwBQAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T05:37:09.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T05:37:09.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "UserServices.cs",
               "DocumentMoniker": "D:\\Github\\FunDoNotes\\FunDoNotes\\RepoLayer\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "RepoLayer\\Services\\UserServices.cs",
               "ToolTip": "D:\\Github\\FunDoNotes\\FunDoNotes\\RepoLayer\\Services\\UserServices.cs",
               "RelativeToolTip": "RepoLayer\\Services\\UserServices.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAuwIQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T10:15:43.805Z",
               "EditorCaption": ""

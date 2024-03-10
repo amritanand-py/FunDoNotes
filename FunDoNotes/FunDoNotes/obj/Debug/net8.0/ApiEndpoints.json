@@ -17,6 +17,43 @@
   },
   {
     "ContainingType": "FunDoNotes.Controllers.NoteController",
+    "Method": "addingColor",
+    "RelativePath": "api/Note/Colour",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "color",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noteid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDoNotes.Controllers.NoteController",
+    "Method": "delete",
+    "RelativePath": "api/Note/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "noteid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDoNotes.Controllers.NoteController",
     "Method": "editpin",
     "RelativePath": "api/Note/Pin",
     "HttpMethod": "PUT",
@@ -59,6 +96,22 @@
         "Name": "model",
         "Type": "CommonLayer.RequestModel.NotesReqModel",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FunDoNotes.Controllers.NoteController",
+    "Method": "edittrash",
+    "RelativePath": "api/Note/Trash",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "noteid",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

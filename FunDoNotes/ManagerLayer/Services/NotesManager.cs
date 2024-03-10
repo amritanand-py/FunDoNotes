@@ -28,6 +28,10 @@ namespace ManagerLayer.Services
         {
             return NotesManagerobj.UpdatePin(Noteid,UserID);
         }
+        public bool Updatetrash(int Noteid, int UserID)
+        {
+            return NotesManagerobj.Updatetrash(Noteid, UserID);
+        }
 
         public NoteEntity SearchByTitle(string title, string Description)
         {
@@ -38,6 +42,13 @@ namespace ManagerLayer.Services
         {
             return NotesManagerobj.CountUserNotes(userid);
         }
-
+        public string addColor(int Noteid, string colour)
+        {
+            return NotesManagerobj.addColor(Noteid, colour);
+        }
+        public bool deleteNote(int Noteid)
+        {
+            return NotesManagerobj.deleteNote(Noteid);
+        }
     }
 }
